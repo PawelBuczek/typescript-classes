@@ -9,11 +9,11 @@ class Customer {
     }
 }
 
-let myCustomer1 = new Customer("Sarah", "BS");
+let myCustomer = new Customer("Sarah", "BS");
 
-console.log(myCustomer1.firstName + " " + myCustomer1.lastName);
+console.log(myCustomer.firstName + " " + myCustomer.lastName);
 
-myCustomer1.firstName = "Martin";
-myCustomer1.lastName = "VJ";
+myCustomer.firstName = "Martin";
+myCustomer.lastName = "VJ";
 
-console.log(myCustomer1.firstName + " " + myCustomer1.lastName);
+console.log(myCustomer.firstName + " " + myCustomer.lastName);
