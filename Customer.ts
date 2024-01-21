@@ -7,13 +7,17 @@ export class Customer {
          this.firstName=firstName;
          this.lastName=lastName;
     }
+
+    printFullName() {
+        console.log(this.firstName + " " + this.lastName);
+    }
 }
 
 let myCustomer = new Customer("Sarah", "BS");
 
-console.log(myCustomer.firstName + " " + myCustomer.lastName);
+myCustomer.printFullName();
 
 myCustomer.firstName = "Martin";
 myCustomer.lastName = "VJ";
 
-console.log(myCustomer.firstName + " " + myCustomer.lastName);
+myCustomer.printFullName();
