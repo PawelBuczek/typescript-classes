@@ -19,14 +19,16 @@ class AccessorCustomer {
     public set lastName(value: string) {
         this._lastName = value;
     }
+
+    printFullName() {
+        console.log(this._firstName + " " + this._lastName);
+    }
 }
 
 
 let myAccessorCustomer = new AccessorCustomer("Martin", "VJ");
-console.log(myAccessorCustomer.firstName);
-console.log(myAccessorCustomer.lastName);
+myAccessorCustomer.printFullName();
 
 myAccessorCustomer.firstName = "Fiona";
 myAccessorCustomer.lastName = "Sourdough";
-console.log(myAccessorCustomer.firstName);
-console.log(myAccessorCustomer.lastName);
+myAccessorCustomer.printFullName();
