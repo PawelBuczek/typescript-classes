@@ -5,7 +5,7 @@ export class Rectangle extends Shape {
     constructor(theX: number, theY: number, private _width: number, private _length: number) {
         super(theX, theY);
         this._width = _width;
-        this._length = length;
+        this._length = _length;
     }
 
     getInfo(): string {
