@@ -1,6 +1,6 @@
 
 export class Shape {
-    constructor(private _x: number, private _y:number) {
+    constructor(private _x: number, private _y: number) {
     }
 
     private get x(): number {
@@ -17,5 +17,9 @@ export class Shape {
 
     private set y(value: number) {
         this._y = value;
+    }
+
+    getInfo(): string {
+        return `x=${this._x}, y =${this._y}`;
     }
 }
