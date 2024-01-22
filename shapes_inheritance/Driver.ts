@@ -12,3 +12,5 @@ shapeCollection.push(circle);
 shapeCollection.push(rectangle);
 
 console.log(shapeCollection);
+
+shapeCollection.forEach(sh => console.log(sh.getInfo()));
