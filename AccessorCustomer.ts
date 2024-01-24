@@ -1,6 +1,6 @@
 class AccessorCustomer {
 
-    constructor(private _firstName: string, 
+    constructor(private _firstName: string,
         private _lastName: string) {
     }
 
